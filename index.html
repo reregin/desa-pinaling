@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Desa Pinaling - Beranda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="assets/images/Lambang_Kabupaten_Minahasa_Selatan_sq.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#C2C5AA',
+                            100: '#B6AD90',
+                            200: '#A68A64',
+                            300: '#936639',
+                            400: '#7F4F24',
+                            500: '#582F0E',
+                            600: '#414833',
+                            700: '#333D29',
+                            800: '#656D4A',
+                            900: '#A4AC86',
+                            1000: '#FFF2C9',
+                            1100: '#DCD1AE'
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'ui-sans-serif', 'system-ui']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <div class="w-12 h-16 flex items-center justify-center mr-4 overflow-hidden">
+                        <img src="assets\images\Lambang_Kabupaten_Minahasa_Selatan.png" alt="Logo Desa Pinaling" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <span class="font-bold text-xl text-white">Desa Pinaling</span>
+                        <p class="text-primary-1100 text-sm">Profil Desa Resmi</p>
+                    </div>
+                </div>
+                <div class="hidden lg:flex items-center space-x-2">
+                    <a href="index.html" class="nav-link active text-white">Beranda</a>
+                    <a href="pages/sejarah.html" class="nav-link text-white">Sejarah</a>
+                    <a href="pages/visi-misi.html" class="nav-link text-white">Visi & Misi</a>
+                    <a href="pages/perangkat-desa.html" class="nav-link text-white">Perangkat</a>
+                    <a href="pages/kependudukan.html" class="nav-link text-white">Kependudukan</a>
+                    <a href="pages/potensi-desa.html" class="nav-link text-white">Potensi</a>
+                    <a href="pages/topografi.html" class="nav-link text-white">Topografi</a>
+                    <a href="pages/fasilitas.html" class="nav-link text-white">Fasilitas</a>
+                </div>
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-primary-100 p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-primary-500 border-t border-primary-400 backdrop-blur-md">
+            <div class="px-4 pt-4 pb-6 space-y-1">
+                <a href="index.html" class="mobile-nav-link active text-white">Beranda</a>
+                <a href="pages/sejarah.html" class="mobile-nav-link text-white">Sejarah</a>
+                <a href="pages/visi-misi.html" class="mobile-nav-link text-white">Visi & Misi</a>
+                <a href="pages/perangkat-desa.html" class="mobile-nav-link text-white">Perangkat</a>
+                <a href="pages/kependudukan.html" class="mobile-nav-link text-white">Kependudukan</a>
+                <a href="pages/potensi-desa.html" class="mobile-nav-link text-white">Potensi</a>
+                <a href="pages/topografi.html" class="mobile-nav-link text-white">Topografi</a>
+                <a href="pages/fasilitas.html" class="nav-link text-white">Fasilitas</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-32 pt-40">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
+                    Selamat Datang di<br>
+                    <span class="text-primary-1000">Desa Pinaling</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-12 text-primary-1100 leading-relaxed max-w-3xl mx-auto">
+                    Mewujudkan Masyarakat Desa Pinaling yang Maju, Berkepribadian dan Sejahtera
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                    <a href="pages/sejarah.html" class="bg-white text-primary-500 px-10 py-4 rounded-xl font-semibold hover:bg-primary-50 transition duration-300 shadow-lg hover:shadow-xl">
+                        Pelajari Sejarah Kami
+                    </a>
+                    <a href="pages/visi-misi.html" class="border-2 border-white text-white px-10 py-4 rounded-xl font-semibold hover:bg-white hover:text-primary-500 transition duration-300">
+                        Visi & Misi Desa
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info Cards -->
+    <section class="py-24 bg-white relative">
+        <div class="absolute top-0 left-1/2 transform -translate-x-1/2">
+            <div class="section-divider"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary-700 mb-4">Informasi Utama</h2>
+                <p class="text-lg text-primary-600 max-w-2xl mx-auto">
+                    Akses cepat ke informasi penting tentang desa kami
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white border border-primary-100 p-8 rounded-2xl shadow-md card-hover">
+                    <div class="w-16 h-16 bg-primary-500 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-primary-700">Perangkat Desa</h3>
+                    <p class="text-primary-600 mb-6 leading-relaxed">
+                        Struktur organisasi dan profil lengkap perangkat desa yang melayani masyarakat dengan dedikasi tinggi
+                    </p>
+                    <a href="pages/perangkat-desa.html" class="inline-flex items-center text-primary-500 font-semibold hover:text-primary-400 transition duration-300">
+                        Lihat Selengkapnya 
+                        <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="bg-white border border-primary-100 p-8 rounded-2xl shadow-md card-hover">
+                    <div class="w-16 h-16 bg-primary-800 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-primary-700">Data Kependudukan</h3>
+                    <p class="text-primary-600 mb-6 leading-relaxed">
+                        Statistik dan demografi penduduk desa terkini sebagai dasar perencanaan pembangunan berkelanjutan
+                    </p>
+                    <a href="pages/kependudukan.html" class="inline-flex items-center text-primary-800 font-semibold hover:text-primary-600 transition duration-300">
+                        Lihat Selengkapnya 
+                        <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="bg-white border border-primary-100 p-8 rounded-2xl shadow-md card-hover md:col-span-2 lg:col-span-1">
+                    <div class="w-16 h-16 bg-primary-900 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-primary-700">Potensi Desa</h3>
+                    <p class="text-primary-600 mb-6 leading-relaxed">
+                        Eksplorasi kekayaan alam, budaya, dan ekonomi desa yang menjadi foundation pembangunan masa depan
+                    </p>
+                    <a href="pages/potensi-desa.html" class="inline-flex items-center text-primary-900 font-semibold hover:text-primary-700 transition duration-300">
+                        Lihat Selengkapnya 
+                        <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Image Section -->
+    <section class="py-24 bg-gradient-to-br from-primary-50 to-primary-100">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary-700 mb-6">Keindahan Desa Kami</h2>
+                <p class="text-lg text-primary-600 max-w-3xl mx-auto leading-relaxed">
+                    Saksikan pesona alam yang menjadi kebanggaan bersama
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group overflow-hidden rounded-2xl shadow-lg card-hover flex flex-col h-full">
+                    <img src="https://picsum.photos/400/300?random=1" alt="Air Terjun Alam" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="p-6 bg-white flex-grow flex flex-col">
+                        <h3 class="font-semibold text-primary-700 mb-2">Air Terjun Alam</h3>
+                        <p class="text-primary-600 text-sm flex-grow">Temukan ketenangan di balik gemuruh air terjun alami yang tersembunyi di tengah kebun Pinaling.</p>
+                    </div>
+                </div>
+                <div class="group overflow-hidden rounded-2xl shadow-lg card-hover flex flex-col h-full">
+                    <img src="https://picsum.photos/400/300?random=2" alt="Lembah Diapit Bukit" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="p-6 bg-white flex-grow flex flex-col">
+                        <h3 class="font-semibold text-primary-700 mb-2">Lembah Diapit Bukit</h3>
+                        <p class="text-primary-600 text-sm flex-grow">Desa Pinaling terletak indah di antara Bukit Lamo dan Ranoimbale, menciptakan lanskap lembah yang mempesona dan sejuk sepanjang tahun.</p>
+                    </div>
+                </div>
+                <div class="group overflow-hidden rounded-2xl shadow-lg card-hover md:col-span-2 lg:col-span-1 flex flex-col h-full">
+                    <img src="https://picsum.photos/400/300?random=3" alt="Kebun Subur & Aliran Sungai" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="p-6 bg-white flex-grow flex flex-col">
+                        <h3 class="font-semibold text-primary-700 mb-2">Kebun Subur & Aliran Sungai</h3>
+                        <p class="text-primary-600 text-sm flex-grow">Sungai Pentu yang mengalir sepanjang desa memberi kehidupan pada kebun kelapa, cengkih, dan palawija, yang memperlihatkan harmoni antara alam dan masyarakat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-700 text-white">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-16 flex items-center justify-center mr-4 overflow-hidden">
+                            <img src="assets\images\Lambang_Kabupaten_Minahasa_Selatan.png" alt="Logo Desa Pinaling" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Desa Pinaling</h3>
+                            <p class="text-primary-100 text-sm">Profil Desa Resmi</p>
+                        </div>
+                    </div>
+                    <p class="text-primary-100 mb-6 leading-relaxed max-w-lg">
+                        Mewujudkan Masyarakat Desa Pinaling yang Maju, Berkepribadian dan Sejahtera
+                    </p>
+                    <div class="space-y-3">
+                        <p class="text-primary-100 flex items-center">
+                            <svg class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            Kecamatan Amurang Timur, Kabupaten Minahasa Selatan, Provinsi Sulawesi Utara, Indonesia
+                        </p>
+                        <p class="text-primary-100 flex items-center">
+                            <svg class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            (021) 1234-5678
+                        </p>
+                        <p class="text-primary-100 flex items-center">
+                            <svg class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            info@desapinaling.id
+                        </p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Navigasi Utama</h3>
+                    <ul class="space-y-3">
+                        <li><a href="pages/sejarah.html" class="text-primary-100 hover:text-white transition duration-300">Sejarah Desa</a></li>
+                        <li><a href="pages/visi-misi.html" class="text-primary-100 hover:text-white transition duration-300">Visi & Misi</a></li>
+                        <li><a href="pages/perangkat-desa.html" class="text-primary-100 hover:text-white transition duration-300">Perangkat Desa</a></li>
+                        <li><a href="pages/kependudukan.html" class="text-primary-100 hover:text-white transition duration-300">Data Penduduk</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Informasi Desa</h3>
+                    <ul class="space-y-3">
+                        <li><a href="pages/potensi-desa.html" class="text-primary-100 hover:text-white transition duration-300">Potensi Desa</a></li>
+                        <li><a href="pages/topografi.html" class="text-primary-100 hover:text-white transition duration-300">Kondisi Geografis</a></li>
+                    </ul>
+                    
+                    <!-- Developer Section -->
+                    <div class="mt-8 pt-6 border-t border-primary-600">
+                        <div class="flex items-start mb-4">
+                            <div class="w-16 h-16 rounded-md flex items-center justify-center mr-3 flex-shrink-0 overflow-hidden">
+                                <img src="assets\images\Logo_Posko_Pinaling.png" alt="Logo Developer" class="w-full h-full object-cover rounded-md">
+                            </div>
+                            <div class="text-primary-100 text-sm leading-relaxed">
+                                <p class="font-medium">Developed by <a href="https://www.linkedin.com/in/regina-george/" class="font-semibold italic underline">Regina George</a></p>
+                                <p>Facilitated through <a href="https://www.instagram.com/kkt143_pinaling/" class="font-semibold italic underline">KKT-143 UNSRAT Posko Pinaling</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="border-t border-primary-600">
+            <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-6">
+                <div class="flex justify-center">
+                    <p class="text-primary-100 text-sm">&copy; 2025 Desa Pinaling</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
