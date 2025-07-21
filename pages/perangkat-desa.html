@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perangkat Desa - Desa Pinaling</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="../assets/images/Lambang_Kabupaten_Minahasa_Selatan_sq.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#C2C5AA',
+                            100: '#B6AD90',
+                            200: '#A68A64',
+                            300: '#936639',
+                            400: '#7F4F24',
+                            500: '#582F0E',
+                            600: '#414833',
+                            700: '#333D29',
+                            800: '#656D4A',
+                            900: '#A4AC86',
+                            1000: '#FFF2C9',
+                            1100: '#DCD1AE'
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'ui-sans-serif', 'system-ui']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <div class="w-12 h-16 flex items-center justify-center mr-4 overflow-hidden">
+                        <img src="../assets/images/Lambang_Kabupaten_Minahasa_Selatan.png" alt="Logo Desa Pinaling" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <span class="font-bold text-xl text-white">Desa Pinaling</span>
+                        <p class="text-primary-1100 text-sm">Profil Desa Resmi</p>
+                    </div>
+                </div>
+                <div class="hidden lg:flex items-center space-x-2">
+                    <a href="../index.html" class="nav-link text-white">Beranda</a>
+                    <a href="sejarah.html" class="nav-link text-white">Sejarah</a>
+                    <a href="visi-misi.html" class="nav-link text-white">Visi & Misi</a>
+                    <a href="perangkat-desa.html" class="nav-link text-white">Perangkat</a>
+                    <a href="kependudukan.html" class="nav-link text-white">Kependudukan</a>
+                    <a href="potensi-desa.html" class="nav-link text-white">Potensi</a>
+                    <a href="topografi.html" class="nav-link text-white">Topografi</a>
+                    <a href="fasilitas.html" class="nav-link active text-white">Fasilitas</a>
+                </div>
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-primary-100 p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-primary-500 border-t border-primary-400 backdrop-blur-md">
+            <div class="px-4 pt-4 pb-6 space-y-1">
+                <a href="../index.html" class="mobile-nav-link text-white">Beranda</a>
+                <a href="sejarah.html" class="mobile-nav-link text-white">Sejarah</a>
+                <a href="visi-misi.html" class="mobile-nav-link text-white">Visi & Misi</a>
+                <a href="perangkat-desa.html" class="mobile-nav-link text-white">Perangkat</a>
+                <a href="kependudukan.html" class="mobile-nav-link text-white">Kependudukan</a>
+                <a href="potensi-desa.html" class="mobile-nav-link text-white">Potensi</a>
+                <a href="topografi.html" class="mobile-nav-link text-white">Topografi</a>
+                <a href="fasilitas.html" class="mobile-nav-link active text-white">Fasilitas</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-24 pt-32">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                    Perangkat <span class="text-primary-1000">Desa Pinaling</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-primary-1100 leading-relaxed max-w-3xl mx-auto">
+                    Struktur organisasi dan profil lengkap perangkat desa yang melayani masyarakat dengan dedikasi tinggi
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kepala Desa Section -->
+    <section class="py-24 bg-white relative">
+        <div class="absolute top-0 left-1/2 transform -translate-x-1/2">
+            <div class="section-divider"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary-700 mb-4">Kepala Desa</h2>
+                <p class="text-lg text-primary-600 max-w-2xl mx-auto">
+                    Pemimpin desa yang berdedikasi untuk kemajuan dan kesejahteraan masyarakat
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white border border-primary-100 rounded-2xl shadow-lg card-hover p-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                        <div class="text-center lg:text-left order-2 lg:order-1">
+                            <h3 class="text-3xl font-bold text-primary-700 mb-3">Jeannie J. Ratu, S.E.</h3>
+                            <p class="text-xl text-primary-500 font-semibold mb-6">Kepala Desa Pinaling</p>
+                            
+                            <div class="space-y-4">
+                                <div class="bg-primary-50 p-4 rounded-xl border border-primary-100">
+                                    <div class="flex items-center mb-2">
+                                        <svg class="w-5 h-5 text-primary-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                        <span class="font-semibold text-primary-700">Periode Jabatan</span>
+                                    </div>
+                                    <p class="text-primary-600 ml-8">Aktif</p>
+                                </div>
+                                
+                                <div class="bg-primary-50 p-4 rounded-xl border border-primary-100">
+                                    <div class="flex items-center mb-2">
+                                        <svg class="w-5 h-5 text-primary-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                        </svg>
+                                        <span class="font-semibold text-primary-700">Pendidikan</span>
+                                    </div>
+                                    <p class="text-primary-600 ml-8">S1 Ekonomi (S.E.)</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center order-1 lg:order-2">
+                            <div class="relative inline-block">
+                                <img src="https://picsum.photos/300/400?random=20" alt="Kepala Desa" class="w-64 h-80 object-cover rounded-2xl shadow-lg">
+                                <div class="absolute inset-0 rounded-2xl bg-gradient-to-t from-primary-500/20 to-transparent"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekretaris Desa Section -->
+    <section class="py-24 bg-gradient-to-br from-primary-50 to-primary-100">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary-700 mb-4">Sekretaris Desa</h2>
+                <p class="text-lg text-primary-600 max-w-2xl mx-auto">
+                    Koordinator administrasi dan pelayanan masyarakat
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto mb-16">
+                <div class="bg-white border border-primary-100 rounded-2xl shadow-lg card-hover p-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                        <div class="text-center lg:text-left order-2 lg:order-1">
+                            <h3 class="text-3xl font-bold text-primary-700 mb-3">Leonardo L. Karinda, S.IP.</h3>
+                            <p class="text-xl text-primary-500 font-semibold mb-6">Sekretaris Desa Pinaling</p>
+                            
+                            <div class="space-y-4">
+                                <div class="bg-primary-50 p-4 rounded-xl border border-primary-100">
+                                    <div class="flex items-center mb-2">
+                                        <svg class="w-5 h-5 text-primary-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                        </svg>
+                                        <span class="font-semibold text-primary-700">Pendidikan</span>
+                                    </div>
+                                    <p class="text-primary-600 ml-8">S1 Ilmu Politik (S.IP.)</p>
+                                </div>
+                                
+                                <div class="bg-primary-50 p-4 rounded-xl border border-primary-100">
+                                    <div class="flex items-center mb-2">
+                                        <svg class="w-5 h-5 text-primary-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2V6" />
+                                        </svg>
+                                        <span class="font-semibold text-primary-700">Bidang Tugas</span>
+                                    </div>
+                                    <p class="text-primary-600 ml-8">Administrasi dan Koordinasi Desa</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center order-1 lg:order-2">
+                            <div class="relative inline-block">
+                                <img src="https://picsum.photos/300/400?random=21" alt="Sekretaris Desa" class="w-64 h-80 object-cover rounded-2xl shadow-lg">
+                                <div class="absolute inset-0 rounded-2xl bg-gradient-to-t from-primary-500/20 to-transparent"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Staff Sekretaris -->
+            <div class="text-center mb-12">
+                <h3 class="text-2xl font-bold text-primary-700 mb-4">Tim Sekretariat</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Kepala Urusan Umum dan Tata Usaha -->
+                <div class="bg-white border border-primary-100 rounded-2xl shadow-md card-hover p-6 text-center">
+                    <div class="relative inline-block mb-6">
+                        <img src="https://picsum.photos/250/300?random=22" alt="Kaur Umum" class="w-32 h-40 object-cover rounded-xl shadow-md">
+                        <div class="absolute inset-0 rounded-xl bg-gradient-to-t from-primary-500/10 to-transparent"></div>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-700 mb-2">Elizabeth Rombon</h3>
+                    <p class="text-primary-500 font-semibold mb-2">Kepala Urusan Umum dan Tata Usaha</p>
+                    <p class="text-primary-600 text-sm bg-primary-50 px-3 py-1 rounded-full inline-block">Administrasi Umum</p>
+                </div>
+
+                <!-- Kepala Urusan Perencanaan -->
+                <div class="bg-white border border-primary-100 rounded-2xl shadow-md card-hover p-6 text-center">
+                    <div class="relative inline-block mb-6">
+                        <img src="https://picsum.photos/250/300?random=23" alt="Kaur Perencanaan" class="w-32 h-40 object-cover rounded-xl shadow-md">
+                        <div class="absolute inset-0 rounded-xl bg-gradient-to-t from-primary-500/10 to-transparent"></div>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-700 mb-2">Fenly Kanaitang</h3>
+                    <p class="text-primary-500 font-semibold mb-2">Kepala Urusan Perencanaan</p>
+                    <p class="text-primary-600 text-sm bg-primary-50 px-3 py-1 rounded-full inline-block">Perencanaan Pembangunan</p>
+                </div>
+
+                <!-- Kepala Urusan Keuangan -->
+                <div class="bg-white border border-primary-100 rounded-2xl shadow-md card-hover p-6 text-center">
+                    <div class="relative inline-block mb-6">
+                        <img src="https://picsum.photos/250/300?random=24" alt="Kaur Keuangan" class="w-32 h-40 object-cover rounded-xl shadow-md">
+                        <div class="absolute inset-0 rounded-xl bg-gradient-to-t from-primary-500/10 to-transparent"></div>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-700 mb-2">Andrey V. Runtuwarow</h3>
+                    <p class="text-primary-500 font-semibold mb-2">Kepala Urusan Keuangan</p>
+                    <p class="text-primary-600 text-sm bg-primary-50 px-3 py-1 rounded-full inline-block">Pengelolaan Keuangan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kepala Seksi Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary-700 mb-4">Kepala Seksi</h2>
+                <p class="text-lg text-primary-600 max-w-2xl mx-auto">
+                    Koordinator bidang pelayanan dan kesejahteraan masyarakat
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Kepala Seksie Pelayanan -->
+                <div class="bg-white border border-primary-100 rounded-2xl shadow-lg card-hover p-8 text-center">
+                    <div class="relative inline-block mb-6">
+                        <img src="https://picsum.photos/280/350?random=25" alt="Kepala Seksie Pelayanan" class="w-36 h-44 object-cover rounded-xl shadow-md">
+                        <div class="absolute inset-0 rounded-xl bg-gradient-to-t from-primary-500/10 to-transparent"></div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary-700 mb-2">Thirsa Egeten</h3>
+                    <p class="text-lg text-primary-500 font-semibold mb-4">Kepala Seksie Pelayanan</p>
+                    <p class="text-primary-600 text-sm bg-primary-50 px-4 py-2 rounded-full inline-block">Pelayanan Masyarakat</p>
+                </div>
+
+                <!-- Kepala Seksie Kesejahteraan -->
+                <div class="bg-white border border-primary-100 rounded-2xl shadow-lg card-hover p-8 text-center">
+                    <div class="relative inline-block mb-6">
+                        <img src="https://picsum.photos/280/350?random=26" alt="Kepala Seksie Kesejahteraan" class="w-36 h-44 object-cover rounded-xl shadow-md">
+                        <div class="absolute inset-0 rounded-xl bg-gradient-to-t from-primary-500/10 to-transparent"></div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary-700 mb-2">Yolanda Ontolay</h3>
+                    <p class="text-lg text-primary-500 font-semibold mb-4">Kepala Seksie Kesejahteraan</p>
+                    <p class="text-primary-600 text-sm bg-primary-50 px-4 py-2 rounded-full inline-block">Kesejahteraan Sosial</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kepala Jaga Section -->
+    <section class="py-24 bg-gradient-to-br from-primary-50 to-primary-100">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary-700 mb-4">Kepala Jaga</h2>
+                <p class="text-lg text-primary-600 max-w-2xl mx-auto">
+                    Koordinator tingkat jaga yang melayani masyarakat di wilayah masing-masing
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Kepala Jaga 2 -->
+                <div class="bg-white border border-primary-100 rounded-2xl shadow-md card-hover p-6 text-center">
+                    <div class="relative inline-block mb-4">
+                        <img src="https://picsum.photos/200/250?random=27" alt="Kepala Jaga 2" class="w-24 h-32 object-cover rounded-xl shadow-md">
+                        <div class="absolute inset-0 rounded-xl bg-gradient-to-t from-primary-500/10 to-transparent"></div>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary-700 mb-1">Fifi Mewengkang</h3>
+                    <p class="text-primary-500 font-semibold text-sm">Kepala Jaga 2</p>
+                </div>
+                
+                <!-- Kepala Jaga 4 -->
+                <div class="bg-white border border-primary-100 rounded-2xl shadow-md card-hover p-6 text-center">
+                    <div class="relative inline-block mb-4">
+                        <img src="https://picsum.photos/200/250?random=28" alt="Kepala Jaga 4" class="w-24 h-32 object-cover rounded-xl shadow-md">
+                        <div class="absolute inset-0 rounded-xl bg-gradient-to-t from-primary-500/10 to-transparent"></div>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary-700 mb-1">Leydi Rombon</h3>
+                    <p class="text-primary-500 font-semibold text-sm">Kepala Jaga 4</p>
+                </div>
+                
+                <!-- Kepala Jaga 7 -->
+                <div class="bg-white border border-primary-100 rounded-2xl shadow-md card-hover p-6 text-center">
+                    <div class="relative inline-block mb-4">
+                        <img src="https://picsum.photos/200/250?random=29" alt="Kepala Jaga 7" class="w-24 h-32 object-cover rounded-xl shadow-md">
+                        <div class="absolute inset-0 rounded-xl bg-gradient-to-t from-primary-500/10 to-transparent"></div>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary-700 mb-1">Stedy Lintjewas</h3>
+                    <p class="text-primary-500 font-semibold text-sm">Kepala Jaga 7</p>
+                </div>
+                
+                <!-- Kepala Jaga 9 -->
+                <div class="bg-white border border-primary-100 rounded-2xl shadow-md card-hover p-6 text-center">
+                    <div class="relative inline-block mb-4">
+                        <img src="https://picsum.photos/200/250?random=30" alt="Kepala Jaga 9" class="w-24 h-32 object-cover rounded-xl shadow-md">
+                        <div class="absolute inset-0 rounded-xl bg-gradient-to-t from-primary-500/10 to-transparent"></div>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary-700 mb-1">Ronli Egeten</h3>
+                    <p class="text-primary-500 font-semibold text-sm">Kepala Jaga 9</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Struktur Organisasi Section -->
+    <!-- <section class="py-24 bg-gradient-to-br from-primary-50 to-primary-100">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary-700 mb-4">Struktur Organisasi</h2>
+                <p class="text-lg text-primary-600 max-w-2xl mx-auto">
+                    Bagan organisasi yang menunjukkan hierarki dan hubungan kerja dalam pemerintahan desa
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-2xl shadow-lg p-8 border border-primary-100">
+                <div class="text-center mb-8">
+                    <div class="bg-primary-500 text-white px-8 py-4 rounded-xl inline-block font-bold text-lg shadow-md">
+                        KEPALA DESA
+                    </div>
+                </div>
+                
+                <div class="flex justify-center mb-8">
+                    <div class="bg-primary-700 text-white px-6 py-3 rounded-xl font-semibold shadow-md">
+                        SEKRETARIS DESA
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                    <div class="bg-primary-800 text-white px-4 py-3 rounded-xl text-center font-semibold shadow-md">
+                        KAUR KEUANGAN
+                    </div>
+                    <div class="bg-primary-800 text-white px-4 py-3 rounded-xl text-center font-semibold shadow-md">
+                        KAUR UMUM
+                    </div>
+                    <div class="bg-primary-800 text-white px-4 py-3 rounded-xl text-center font-semibold shadow-md">
+                        KAUR PEMBANGUNAN
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                    <div class="bg-primary-800 text-white px-4 py-3 rounded-xl text-center font-semibold shadow-md">
+                        KAUR KESEJAHTERAAN
+                    </div>
+                    <div class="bg-primary-800 text-white px-4 py-3 rounded-xl text-center font-semibold shadow-md">
+                        KAUR PEMERINTAHAN
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div class="bg-primary-900 text-white px-4 py-3 rounded-xl text-center font-semibold shadow-md">
+                        KADUS I
+                    </div>
+                    <div class="bg-primary-900 text-white px-4 py-3 rounded-xl text-center font-semibold shadow-md">
+                        KADUS II
+                    </div>
+                    <div class="bg-primary-900 text-white px-4 py-3 rounded-xl text-center font-semibold shadow-md">
+                        KADUS III
+                    </div>
+                    <div class="bg-primary-900 text-white px-4 py-3 rounded-xl text-center font-semibold shadow-md">
+                        KADUS IV
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="bg-primary-700 text-white">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-16 flex items-center justify-center mr-4 overflow-hidden">
+                            <img src="..\assets\images\Lambang_Kabupaten_Minahasa_Selatan.png" alt="Logo Desa Pinaling" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Desa Pinaling</h3>
+                            <p class="text-primary-100 text-sm">Profil Desa Resmi</p>
+                        </div>
+                    </div>
+                    <p class="text-primary-100 mb-6 leading-relaxed max-w-lg">
+                        Mewujudkan Masyarakat Desa Pinaling yang Maju, Berkepribadian dan Sejahtera
+                    </p>
+                    <div class="space-y-3">
+                        <p class="text-primary-100 flex items-center">
+                            <svg class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            Kecamatan Amurang Timur, Kabupaten Minahasa Selatan, Provinsi Sulawesi Utara, Indonesia
+                        </p>
+                        <p class="text-primary-100 flex items-center">
+                            <svg class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            (021) 1234-5678
+                        </p>
+                        <p class="text-primary-100 flex items-center">
+                            <svg class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            info@desapinaling.id
+                        </p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Navigasi Utama</h3>
+                    <ul class="space-y-3">
+                        <li><a href="sejarah.html" class="text-primary-100 hover:text-white transition duration-300">Sejarah Desa</a></li>
+                        <li><a href="visi-misi.html" class="text-primary-100 hover:text-white transition duration-300">Visi & Misi</a></li>
+                        <li><a href="perangkat-desa.html" class="text-primary-100 hover:text-white transition duration-300">Perangkat Desa</a></li>
+                        <li><a href="kependudukan.html" class="text-primary-100 hover:text-white transition duration-300">Data Penduduk</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Informasi Desa</h3>
+                    <ul class="space-y-3">
+                        <li><a href="potensi-desa.html" class="text-primary-100 hover:text-white transition duration-300">Potensi Desa</a></li>
+                        <li><a href="topografi.html" class="text-primary-100 hover:text-white transition duration-300">Kondisi Geografis</a></li>
+                    </ul>
+                    
+                    <!-- Developer Section -->
+                    <div class="mt-8 pt-6 border-t border-primary-600">
+                        <div class="flex items-start mb-4">
+                            <div class="w-16 h-16 rounded-md flex items-center justify-center mr-3 flex-shrink-0 overflow-hidden">
+                                <img src="..\assets\images\Logo_Posko_Pinaling.png" alt="Logo Developer" class="w-full h-full object-cover rounded-md">
+                            </div>
+                            <div class="text-primary-100 text-sm leading-relaxed">
+                                <p class="font-medium">Developed by <a href="https://www.linkedin.com/in/regina-george/" class="font-semibold italic underline">Regina George</a></p>
+                                <p>Facilitated through <a href="https://www.instagram.com/kkt143_pinaling/" class="font-semibold italic underline">KKT-143 UNSRAT Posko Pinaling</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="border-t border-primary-600">
+            <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-6">
+                <div class="flex justify-center">
+                    <p class="text-primary-100 text-sm">&copy; 2025 Desa Pinaling</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
