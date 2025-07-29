@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://desa-pinaling.netlify.app/sitemap.xml
