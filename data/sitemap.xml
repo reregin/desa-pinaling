@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.desapinaling.com/index.html</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- Halaman utama -->
+  <url>
+    <loc>https://www.desapinaling.com/pages/sejarah.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.desapinaling.com/pages/visi-misi.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.desapinaling.com/pages/perangkat-desa.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.desapinaling.com/pages/kependudukan.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.desapinaling.com/pages/potensi-desa.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.desapinaling.com/pages/geografis.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.desapinaling.com/pages/fasilitas.html</loc>
+    <priority>0.80</priority>
+  </url>
+
+</urlset>
